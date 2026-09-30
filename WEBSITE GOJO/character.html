@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters - Jujutsu Kaisen</title>
+    <link rel="stylesheet" href="character.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+    <div class="logo">GOJO</div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="synopsis.html">Synopsis</a></li>
+        <li><a href="character.html" class="active">Characters</a></li>
+        <li><a href="trailer.html">Trailer</a></li>
+    </ul>
+</nav>
+
+    <!-- Characters -->
+    <section class="characters">
+
+        <h1>Jujutsu Kaisen Characters</h1>
+        <p class="subtitle">Kenali karakter-karakter dalam dunia Jujutsu Kaisen.</p>
+
+        <div class="character-container">
+
+            <!-- Gojo -->
+            <div class="character-card" onclick="openGojoModal()">
+    <img src="asset/gojo.jpg" alt="Gojo Satoru">
+    <h2>Gojo Satoru</h2>
+    <p>
+        Penyihir Jujutsu terkuat yang memiliki teknik
+        Limitless dan kemampuan Six Eyes.
+    </p>
+</div>
+            <!-- Yuji -->
+            <div class="character-card" onclick="openYujiModal()">
+
+                <img src="asset/yuji.jpg" alt="Yuji Itadori">
+                <h2>Yuji Itadori</h2>
+                <p>
+                    Siswa SMA yang memiliki kekuatan fisik luar biasa
+                    dan menjadi wadah bagi Sukuna.
+                </p>
+            </div>
+
+            <!-- Megumi -->
+            <!-- Megumi -->
+<div class="character-card" onclick="openMegumiModal()">
+
+            <img src="asset/megumi.jpg" alt="Megumi">
+                <h2>Megumi Fushiguro</h2>
+                <p>
+                    Penyihir Jujutsu yang menggunakan teknik
+                    Ten Shadows untuk memanggil shikigami.
+                </p>
+            </div>
+
+            <!-- Nobara -->
+            <div class="character-card" onclick="openNobaraModal()">
+
+                <img src="asset/nobara.jpg" alt="Nobara">
+                <h2>Nobara Kugisaki</h2>
+                <p>
+                    Penyihir Jujutsu yang menggunakan palu,
+                    paku, dan teknik kutukan berbasis boneka jerami.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Popup Detail Gojo -->
+<div id="gojoModal" class="modal" onclick="closeGojoModal()">
+    <div class="modal-content">
+        <span class="close" onclick="closeGojoModal()">&times;</span>
+
+        <h2>Gojo Satoru</h2>
+
+        <p>
+            Satoru Gojo adalah salah satu penyihir Jujutsu terkuat
+            dalam dunia Jujutsu Kaisen. Ia merupakan pengguna
+            Six Eyes dan teknik Limitless.
+        </p>
+
+        <p>
+            Gojo dikenal memiliki kemampuan luar biasa dalam
+            pertarungan serta berperan sebagai guru bagi para
+            penyihir Jujutsu muda.
+        </p>
+    </div>
+</div>
+
+<!-- Popup Detail Megumi -->
+<div id="megumiModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeMegumiModal()">&times;</span>
+
+        <h2>Megumi Fushiguro</h2>
+
+        <p>
+            Megumi Fushiguro adalah penyihir Jujutsu yang menggunakan
+            teknik Ten Shadows untuk memanggil berbagai shikigami.
+        </p>
+
+        <p>
+            Ia dikenal sebagai penyihir yang tenang dan memiliki
+            potensi besar dalam dunia Jujutsu.
+        </p>
+    </div>
+</div>
+
+
+<!-- Popup Detail Nobara -->
+<div id="nobaraModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeNobaraModal()">&times;</span>
+
+        <h2>Nobara Kugisaki</h2>
+
+        <p>
+            Nobara Kugisaki adalah penyihir Jujutsu yang menggunakan
+            palu, paku, dan teknik kutukan Straw Doll Technique.
+        </p>
+
+        <p>
+            Ia memiliki kepribadian yang percaya diri, berani,
+            dan tidak mudah menyerah dalam menghadapi musuh.
+        </p>
+    </div>
+</div>
+
+
+
+    <!-- Popup Detail Yuji -->
+<div id="yujiModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeYujiModal()">&times;</span>
+
+        <h2>Yuji Itadori</h2>
+
+        <p>
+            Yuji Itadori adalah siswa SMA yang memiliki kekuatan fisik
+            luar biasa dan menjadi wadah bagi Ryomen Sukuna.
+        </p>
+
+        <p>
+            Meskipun terlibat dalam dunia Jujutsu, Yuji tetap berusaha
+            menghargai kehidupan manusia dan melindungi orang-orang di sekitarnya.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

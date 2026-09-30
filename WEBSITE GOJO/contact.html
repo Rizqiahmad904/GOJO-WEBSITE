@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Gojo</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">GOJO</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="synopsis.html">Synopsis</a></li>
+            <li><a href="character.html">Characters</a></li>
+            <li><a href="trailer.html">Trailer</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact -->
+    <section class="contact">
+        <div class="contact-content">
+
+            <h1>Contact Us</h1>
+
+            <p>
+                anda punya masukan kirim lewat sini okyy.
+            </p>
+
+            <form action="https://formspree.io/f/xgavdqob" method="POST">
+                <input type="text" name="name" placeholder="Nama" required>
+
+<input type="email" name="email" placeholder="Email" required>
+
+<textarea name="message" placeholder="Pesan" rows="6" required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+
+        </div>
+    </section>
+
+</body>
+</html>

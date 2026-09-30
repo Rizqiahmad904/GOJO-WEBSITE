@@ -1,0 +1,264 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0a0a18;
+    color: white;
+}
+
+/* BACKGROUND VIDEO */
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* OVERLAY */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: -1;
+}
+
+/* NAVBAR */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+/* LOGO */
+.logo {
+    color: #07baf5;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* MENU NAVIGASI */
+.nav-menu {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #0ca0ea;
+}
+
+/* GARIS BAWAH MENU */
+.nav-menu li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: #00aaff;
+    transition: width 0.3s ease;
+}
+
+.nav-menu li:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+}
+
+/* KONTEN KANAN */
+.hero-content {
+    width: 45%;
+    margin-right: 8%;
+    text-align: left;
+}
+
+/* TAGLINE */
+.tagline {
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #eff4f7;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* JUDUL GOJO */
+.hero-content h1 {
+    font-size: 65px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: white;
+    text-shadow: 0 0 20px #00aaff;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+/* SUBJUDUL */
+.hero-content h2 {
+    font-size: 25px;
+    color: #16cee2;
+    margin-top: 10px;
+}
+
+/* DESKRIPSI */
+.hero-content .description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #1d0be9;
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease 0.5s forwards;
+    opacity: 0;
+}
+
+/* TOMBOL */
+.hero-content button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    background-color: #00bfff;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00bfff;
+    transition: 0.3s;
+    animation: fadeIn 1.5s ease 0.8s forwards;
+    opacity: 0;
+}
+
+.hero-content button:hover {
+    background-color: white;
+    color: #00bfff;
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #00bfff;
+}
+
+/* ANIMASI */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TAMPILAN HP */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 20px 5%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    /* Menu */
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-menu a {
+        font-size: 12px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 100vh;
+        height: auto;
+        padding: 150px 20px 50px;
+        justify-content: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    /* Judul */
+    .hero-content h1 {
+        font-size: 36px;
+        letter-spacing: 3px;
+    }
+
+    /* Subjudul */
+    .hero-content h2 {
+        font-size: 20px;
+    }
+
+    /* Deskripsi */
+    .hero-content .description {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* Tombol */
+    .hero-content button {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
+/* FOOTER */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 25px 10px;
+    color: #aaa;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer p:first-child {
+    color: #00bfff;
+    font-weight: bold;
+}
