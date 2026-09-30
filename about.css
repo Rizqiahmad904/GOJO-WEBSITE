@@ -1,0 +1,207 @@
+/* Pengaturan Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: white;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #111;
+}
+
+nav .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00bfff;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bfff;
+}
+
+/* Bagian About */
+.about {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 10%;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Video Gojo */
+.about-video {
+    flex: 1;
+    animation: fadeUp 1s ease;
+}
+
+.about-video video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+}
+
+.about-video video:hover {
+    transform: scale(1.03);
+}
+
+/* Deskripsi Gojo */
+.about-content {
+    flex: 1;
+    color: white;
+    animation: fadeUp 1.5s ease;
+}
+
+.about-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #00bfff;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #cccccc;
+}
+
+/* Animasi */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-content h1 {
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+}
+
+/* Kemampuan Gojo */
+.abilities {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: #0b0b0b;
+}
+
+.abilities h1 {
+    font-size: 36px;
+    color: #00bfff;
+    margin-bottom: 15px;
+}
+
+.abilities-subtitle {
+    color: #ccc;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.ability-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.ability-card {
+    background-color: #151515;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+
+.ability-card h2 {
+    color: #00bfff;
+    margin-bottom: 15px;
+}
+
+.ability-card p {
+    color: #ccc;
+    line-height: 1.8;
+}
+
+.ability-card:hover {
+    transform: translateY(-8px);
+    border-color: #00bfff;
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
+}
+
+/* Tampilan HP */
+@media (max-width: 768px) {
+    .ability-container {
+        grid-template-columns: 1fr;
+    }
+
+    .abilities h1 {
+        font-size: 28px;
+    }
+
+    .abilities-subtitle {
+        font-size: 16px;
+    }
+}
